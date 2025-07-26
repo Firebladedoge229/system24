@@ -1,0 +1,87 @@
+:root {
+	--colors: on;
+
+	/* text colors */
+	--text-0: var(--bg-4);
+	--text-1: oklch(95% 0 0);
+	--text-2: oklch(90% 0 0);
+	--text-3: oklch(80% 0 0);
+	--text-4: oklch(65% 0 0);
+	--text-5: oklch(45% 0 0);
+
+	/* background and dark colors */
+	--bg-1: oklch(31% 0 0);
+	/* dark buttons when clicked */
+	--bg-2: oklch(27% 0 0);
+	/* dark buttons */
+	--bg-3: oklch(23% 0 0);
+	/* spacing, secondary elements */
+	--bg-4: oklch(19% 0 0);
+	/* main background color */
+	--hover: oklch(54% 0 0 / 0.1);
+	/* channels and buttons when hovered */
+	--active: oklch(54% 0 0 / 0.2);
+	/* channels and buttons when clicked or selected */
+	--active-2: oklch(54% 0 0 / 0.3);
+	/* extra state for transparent buttons */
+	--message-hover: var(--hover);
+	/* messages when hovered */
+
+  /* mint  */
+	--control-background-primary-default: var(--mint-3);
+  --control-background-primary-active: var(--mint-4);
+	--control-background-primary-hover: var(--mint-4);
+  
+	/* mint accent theme */
+	--accent-1: var(--mint-1);
+	--accent-2: var(--mint-2);
+	--accent-3: var(--mint-3);
+	--accent-4: var(--mint-4);
+	--accent-5: var(--mint-5);
+	--accent-new: var(--mint-2);
+
+	--mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent);
+	--mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent);
+	--reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+	--reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+
+	/* status colors */
+	--online: var(--mint-2);
+	--dnd: var(oklch(0.69 0.26 24.61));
+	--idle: var(oklch(0.89 0.17 89.06));
+	--streaming: var(--mint-3);
+	--offline: var(--text-4);
+
+	/* borders */
+	--border-light: var(--hover);
+	--border: var(--active);
+	--border-hover: var(--accent-2);
+	--button-border: hsl(165, 100%, 90%, 0.1);
+
+	/* mint colors */
+	--mint-1: oklch(85% 0.22 165);
+	--mint-2: oklch(78% 0.23 165);
+	--mint-3: oklch(72% 0.22 165);
+	--mint-4: oklch(66% 0.20 165);
+	--mint-5: oklch(60% 0.18 165);
+}
+
+.sectionDivider__35e86 {
+    margin: 7px 0px 0px 0px;
+}
+
+li:has(a[href="/shop"]) {
+    display: none !important;
+}
+
+li:has(a[href="/store"]) {
+    display: none !important;
+}
+
+button[aria-label="Send a gift"] {
+    display: none !important;
+}
+
+:is(#equicordthemes-tab, #vencordthemes-tab) .sectionTitle__7bffb:before {
+    display: none !important;
+}
